@@ -17,9 +17,13 @@ import Race from '../assets/race.jpeg';
 import Skiing from '../assets/skiing.jpeg';
 import 'typeface-roboto';
 
-function MadeWithLove() {
+function Footer() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <Typography 
+      variant="body2" 
+      color="textSecondary" 
+      align="center"
+    >
       {"© 2019, Ryan Dailey "}
     </Typography>
   );
@@ -72,16 +76,24 @@ export default function SimpleExpansionPanel() {
           <Button
             href="/"
             variant="contained" 
-            color="primary">
+            color="primary"
+          >
             <ArrowBackIcon className={classes.leftIcon} />
             Back
           </Button>
         </Toolbar>
       </AppBar>
-      <Container className={classes.cardGrid} maxWidth="false">
+      <Container 
+        className={classes.cardGrid} 
+        maxWidth="false"
+      >
         {/* End hero unit */}
         <Grid container spacing={4}>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid item 
+              xs={12} 
+              sm={6} 
+              md={4}
+            >
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -89,7 +101,11 @@ export default function SimpleExpansionPanel() {
                 />
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid item 
+              xs={12} 
+              sm={6} 
+              md={4}
+            >
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -97,7 +113,11 @@ export default function SimpleExpansionPanel() {
                 />
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid item 
+              xs={12} 
+              sm={6} 
+              md={4}
+            >
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -112,24 +132,22 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography variant="h6" color="primary">About Me</Typography>
+          <Typography 
+            variant="h6" 
+            color="primary"
+          >
+            About Me
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
             I'm currently a senior at the University of Washington studying Computer Science.
-            I grew up in Spokane, Washington, and love to spend time outdoors when I'm not stuck 
-            on campus with a book in my nose. At home, I really enjoy cooking for myself. To me, the cooking process is
-            a lot like the engineering process: it requires, creativity, execution, and the ability to adapt.
+            I grew up in Spokane, Washington, <br/> and like to spend time outdoors when I'm not stuck on campus with a book in my nose. At home, I enjoy cooking for <br/> myself and reading or watching Netflix. I'm open to travelling and working in new places, but will always call the pacific <br/> northwest my home.
           </Typography>
         </ExpansionPanelDetails>
         <ExpansionPanelDetails>
           <Typography>
-            After graduation, I hope to see myself in a role that allows me to reach a wide set of
-            audiences. After two summers as an intern at HBO, I've grown fond of working on services which
-            directly touch users. Even more so, I've learned that the logical and critical thinking which
-            comes with backend development is an area that I excel in. Video streaming and geolocation based service
-            work are two areas that I have substantial experience in. Nonetheless, I'm very familiar with React and
-            find myself retreating to web development when I need to exercise some creativity.
+            After graduation, I hope to see myself in a role that is consumer facing. With two summers of experience as an intern <br/> at HBO, I've realized I get great satisfaction from working on products that directly interface with users. More so, I've <br/> grown fond of the logical and critical thinking which comes with backend development. Video streaming, UI, and user <br/> account based work are areas that I have substantial experience in. In my free time, I enjoy web development and the <br/> creative side that comes with designing and using frameworks like React.
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
@@ -138,7 +156,12 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography variant="h6" color="primary">Contact Info</Typography>
+          <Typography 
+            variant="h6" 
+            color="primary"
+          >
+            Contact Info
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
@@ -151,28 +174,25 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography variant="h6" color="primary">Technical Proficiencies</Typography>
+          <Typography 
+            variant="h6" 
+            color="primary"
+          >
+            Technical Proficiencies
+          </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Programming languages & frameworks: Java, Javascript, HTML, C, C++, SQL, React, Node.js
-          </Typography>
-          <Typography>
-            Databases: PostgreSQL, MySQL
-          </Typography>
-          <Typography>
-            Servers: Azure, AWS, Apache
-          </Typography>
-          <Typography>
-            Tools: Git, JIRA, Jenkins, Docker, JUnit, Kubernetes, Jasmine
-          </Typography>
-          <Typography>
-            Methodologies: SAFe (Scaled Agile Framework), Scrum
+            Programming languages & frameworks: Java, Javascript, HTML, C, C++, SQL, React, Node.js <br/>
+            Databases: PostgreSQL, MySQL <br/>
+            Servers: Azure, AWS, Apache <br/>
+            Tools: Git, JIRA, Jenkins, Docker, JUnit, Kubernetes, Jasmine <br/>
+            Methodologies: SAFe (Scaled Agile Framework), Scrum <br/>
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <footer className={classes.footer}>
-        <MadeWithLove />
+        <Footer />
       </footer>
     </div>
   );
