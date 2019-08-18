@@ -33,28 +33,16 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(1)
   },
   cardGrid: {
-    paddingTop: theme.spacing(10),
+    paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
-    paddingLeft: theme.spacing(16),
-    paddingRight: theme.spacing(16),
+    paddingLeft: theme.spacing(20),
+    paddingRight: theme.spacing(20),
     backgroundColor: theme.palette.background.secondary
-  },
-  card: {
-    height: "100%",
-    display: "flex",
-    flexDirection: "column"
-  },
-  cardMedia: {
-    paddingTop: "56.25%" // 16:9
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6)
   },
-  photoSize: {
-    height: 200,
-    width: 200
-  }
 }));
 
 export default function SimpleExpansionPanel() {
@@ -70,10 +58,10 @@ export default function SimpleExpansionPanel() {
           </Button>
         </Toolbar>
       </AppBar>
-      <Container className={classes.cardGrid} maxWidth="false">
-        <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={4}>
-            <ExpansionPanel>
+      <Container className={classes.cardGrid} maxWidth="true">
+        <Grid container direction="column" spacing={4}>
+          <Grid item xs={12} sm={12} md={12}>
+            <ExpansionPanel width="100%">
               <ExpansionPanelSummary
                 aria-controls="panel1a-content"
                 id="panel1a-header"
@@ -84,37 +72,17 @@ export default function SimpleExpansionPanel() {
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography>
-                  I'm currently a senior at the University of Washington
-                  studying Computer Science. I grew up in Spokane, Washington,{" "}
-                  <br /> and like to spend time outdoors when I'm not stuck on
-                  campus with a book in my nose. At home, I enjoy cooking for{" "}
-                  <br /> myself and reading or watching Netflix. I love to
-                  travel and work in new places, but will find myself coming 
-                  back to the pacific <br /> northwest my home.
+                  I'm currently a senior at the University of Washington studying Computer Science. I grew up in Spokane, Washington, and like to spend time outdoors when I'm not stuck on campus with a book in my nose. At home, I enjoy cooking for myself and reading or watching Netflix. I love to travel and work in new places, but will always find myself drawn to the pacific northwest.
                 </Typography>
               </ExpansionPanelDetails>
               <ExpansionPanelDetails>
                 <Typography>
-                  After graduation, I hope to see myself in a role that is
-                  consumer facing. With two summers of experience as an intern{" "}
-                  <br /> at HBO, I've realized I get great satisfaction from
-                  working on products that directly interface with users. More
-                  so, I've <br /> grown fond of the logical and critical
-                  thinking which comes with backend development. Video
-                  streaming, UI, and user <br /> account based work are areas
-                  that I have substantial experience in. In my free time, I
-                  enjoy web development and the <br /> creative side that comes
-                  with designing and using frameworks like React.
-                </Typography>
-              </ExpansionPanelDetails>
-              <ExpansionPanelDetails>
-                <Typography>
-                  Please see my LinkedIn if you'd like to know more.
+                  After graduation, I hope to see myself in a role that is consumer facing. With two summers of experience as an intern at HBO, I've realized I get great satisfaction from working on products that directly interface with users. More so, I've grown fond of the logical and critical thinking which comes with backend development. Video streaming, gelocation based services, and user account systems are areas that I have substantial experience in. In my free time, I enjoy web development and the creative side that comes with designing and using frameworks like React.
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={12} md={12}>
             <ExpansionPanel>
               <ExpansionPanelSummary
                 aria-controls="panel2a-content"
@@ -129,7 +97,7 @@ export default function SimpleExpansionPanel() {
               </ExpansionPanelDetails>
             </ExpansionPanel>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid item xs={12} sm={12} md={12}>
             <ExpansionPanel>
               <ExpansionPanelSummary
                 aria-controls="panel3a-content"
