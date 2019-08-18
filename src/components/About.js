@@ -35,8 +35,8 @@ const useStyles = makeStyles(theme => ({
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
-    paddingLeft: theme.spacing(20),
-    paddingRight: theme.spacing(20),
+    paddingLeft: theme.spacing(8),
+    paddingRight: theme.spacing(8),
     backgroundColor: theme.palette.background.secondary
   },
   footer: {
@@ -94,29 +94,6 @@ export default function SimpleExpansionPanel() {
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography>dailey.ryan@outlook.com</Typography>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
-          </Grid>
-          <Grid item xs={12} sm={12} md={12}>
-            <ExpansionPanel>
-              <ExpansionPanelSummary
-                aria-controls="panel3a-content"
-                id="panel3a-header"
-              >
-                <Typography variant="h6" color="primary">
-                  Technical Proficiencies
-                </Typography>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails>
-                <Typography>
-                  Programming languages & frameworks: Java, Javascript, HTML, C,
-                  C++, SQL, React, Node.js <br />
-                  Databases: PostgreSQL, MySQL <br />
-                  Servers: Azure, AWS, Apache <br />
-                  Tools: Git, JIRA, Jenkins, Docker, JUnit, Kubernetes, Jasmine{" "}
-                  <br />
-                  Methodologies: SAFe (Scaled Agile Framework), Scrum <br />
-                </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
           </Grid>
